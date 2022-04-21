@@ -85,7 +85,7 @@ public class VendingMachineCLI {
             if (choice.equals(MAIN_MENU_OPTION_EXIT)) {
                 System.out.println("***Thank you for using Vendo-Matic 800!***");
                 vendingMachine.logFile();
-                System.exit(1);
+                System.exit(0);
             }
 
         }

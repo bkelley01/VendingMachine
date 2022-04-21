@@ -16,11 +16,11 @@ import java.util.regex.Pattern;
 public class VendingMachine {
 
     //variables
-    private double startingBalance = 0.00;
+    private double startingBalance = 0.00; //define in method
     public double currentBalance = 0.00;
-    public double endingBalance = 0.00;
+    public double endingBalance = 0.00;    //define in method
     private Map<String, Products> inventory;
-    public List<String> list = new ArrayList<>();
+    public List<String> list = new ArrayList<>(); //change name
 
 
     public double getStartingBalance() {
@@ -137,7 +137,7 @@ public class VendingMachine {
             System.out.print(System.lineSeparator() + "Please input slot location for desired item >>> ");
             slotChoice = scanner.nextLine().toUpperCase();
 
-            if (!inventory.containsKey(slotChoice) || slotChoice.equals(" ")) {
+            if (!inventory.containsKey(slotChoice)) {
                 System.out.println(System.lineSeparator() + "Sorry, " + slotChoice + " is not a valid selection");
 
             }
